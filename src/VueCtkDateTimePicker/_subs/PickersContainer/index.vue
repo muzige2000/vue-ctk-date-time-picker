@@ -149,14 +149,7 @@
     },
     computed: {
       width () {
-        if (this.fullWidth) {
-          return {
-            width: '100%',
-            maxWidth: '100%',
-            minWidth: '100%'
-          }
-        }
-        const size = this.inline
+        const size = this.inline || this.fullWidth
           ? '100%'
           : this.onlyTime
             ? '160px'
@@ -332,7 +325,7 @@
   .datetimepicker {
     position: absolute;
     z-index: 9;
-    width: calc(100% - 60px);
+    width: 100%;
     &.visible {
       z-index: 999;
     }

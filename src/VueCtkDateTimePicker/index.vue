@@ -123,6 +123,7 @@
       dark: { type: Boolean, default: false },
       overlay: { type: Boolean, default: false },
       inline: { type: Boolean, default: false },
+      fullWidth: { type: Boolean, default: false },
       position: { type: String, default: String },
       locale: { type: String, default: getDefaultLocale() },
       formatted: { type: String, default: 'llll' },
