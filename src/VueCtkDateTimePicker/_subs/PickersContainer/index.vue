@@ -149,7 +149,14 @@
     },
     computed: {
       width () {
-        const size = this.inline || this.fullWidth
+        if (this.fullWidth) {
+          return {
+            width: '100%',
+            maxWidth: '100%',
+            minWidth: '100%'
+          }
+        }
+        const size = this.inline
           ? '100%'
           : this.onlyTime
             ? '160px'
