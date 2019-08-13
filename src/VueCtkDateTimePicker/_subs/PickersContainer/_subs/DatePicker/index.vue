@@ -517,22 +517,22 @@
       }
     }
   }
-  @media screen and (max-width: 415px) {
-    #DatePicker.datepicker-container {
-      width: 100%;
-      &:not(.inline) {
-        .datepicker-controls {
-          height: 36px !important;
-        }
-      }
-      &.range.has-shortcuts {
-        width: 100%;
-      }
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      flex-flow: column;
-      -moz-flex-direction: column;
-    }
-  }
+  /*@media screen and (max-width: 415px) {*/
+  /*  #DatePicker.datepicker-container {*/
+  /*    width: 100%;*/
+  /*    &:not(.inline) {*/
+  /*      .datepicker-controls {*/
+  /*        height: 36px !important;*/
+  /*      }*/
+  /*    }*/
+  /*    &.range.has-shortcuts {*/
+  /*      width: 100%;*/
+  /*    }*/
+  /*    -webkit-flex-direction: column;*/
+  /*    -ms-flex-direction: column;*/
+  /*    flex-direction: column;*/
+  /*    flex-flow: column;*/
+  /*    -moz-flex-direction: column;*/
+  /*  }*/
+  /*}*/
 </style>

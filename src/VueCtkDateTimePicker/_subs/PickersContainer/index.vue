@@ -325,7 +325,7 @@
   .datetimepicker {
     position: absolute;
     z-index: 9;
-    width: 100%;
+    width: calc(100% - 60px);
     &.visible {
       z-index: 999;
     }

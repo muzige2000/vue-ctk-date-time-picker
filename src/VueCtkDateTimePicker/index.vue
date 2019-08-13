@@ -375,12 +375,12 @@
     }
   }
 
-  @media screen and (max-width: 415px) {
-    .time-picker-overlay {
-      display: none;
-    }
-    .date-time-picker:not(.inline) {
-      position: inherit !important;
-    }
-  }
+  /*@media screen and (max-width: 415px) {*/
+  /*  .time-picker-overlay {*/
+  /*    display: none;*/
+  /*  }*/
+  /*  .date-time-picker:not(.inline) {*/
+  /*    position: inherit !important;*/
+  /*  }*/
+  /*}*/
 </style>
