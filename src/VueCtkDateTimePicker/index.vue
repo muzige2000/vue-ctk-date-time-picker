@@ -37,6 +37,7 @@
       :visible="hasPickerOpen"
       :position="pickerPosition"
       :inline="inline"
+      :full-width="fullWidth"
       :color="color"
       :button-color="buttonColor"
       :dark="dark"
