@@ -112,6 +112,7 @@
       id: { type: String, default: String },
       position: { type: String, default: 'bottom' },
       inline: { type: Boolean, default: false },
+      fullWidth: { type: Boolean, default: false },
       dark: { type: Boolean, default: false },
       noHeader: { type: Boolean, default: Boolean },
       color: { type: String, default: String },
@@ -148,7 +149,7 @@
     },
     computed: {
       width () {
-        const size = this.inline
+        const size = this.inline || this.fullWidth
           ? '100%'
           : this.onlyTime
             ? '160px'
@@ -366,34 +367,34 @@
       background-color: white;
     }
   }
-  @media screen and (max-width: 415px) {
-    .pickers-container {
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      flex-flow: column;
-      -moz-flex-direction: column;
-    }
-    .datetimepicker:not(.inline) {
-      margin: 0 !important;
-      position: absolute;
-      top: 0 !important;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      .datepicker {
-        border-radius: 0 !important;
-        bottom: 0 !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        width: 100% !important;
-        max-width: inherit !important;
-        min-width: inherit !important;
-        position: fixed;
-        height: 100%;
-        margin: 0 !important;
-      }
-    }
-  }
+  /*@media screen and (max-width: 415px) {*/
+  /*  .pickers-container {*/
+  /*    -webkit-flex-direction: column;*/
+  /*    -ms-flex-direction: column;*/
+  /*    flex-direction: column;*/
+  /*    flex-flow: column;*/
+  /*    -moz-flex-direction: column;*/
+  /*  }*/
+  /*  .datetimepicker:not(.inline) {*/
+  /*    margin: 0 !important;*/
+  /*    position: absolute;*/
+  /*    top: 0 !important;*/
+  /*    bottom: 0;*/
+  /*    right: 0;*/
+  /*    left: 0;*/
+  /*    .datepicker {*/
+  /*      border-radius: 0 !important;*/
+  /*      bottom: 0 !important;*/
+  /*      top: 0 !important;*/
+  /*      left: 0 !important;*/
+  /*      right: 0 !important;*/
+  /*      width: 100% !important;*/
+  /*      max-width: inherit !important;*/
+  /*      min-width: inherit !important;*/
+  /*      position: fixed;*/
+  /*      height: 100%;*/
+  /*      margin: 0 !important;*/
+  /*    }*/
+  /*  }*/
+  /*}*/
 </style>
